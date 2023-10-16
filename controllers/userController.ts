@@ -73,7 +73,7 @@ export const login = async (
   }
 };
 
-export const auth = (
+export const refreshToken = (
   req: RequestWithUser,
   res: Response,
   next: NextFunction
