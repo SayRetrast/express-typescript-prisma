@@ -4,10 +4,10 @@ import {
   refreshToken,
 } from "../controllers/userController";
 import { Router, RequestHandler } from "express";
-import { refreshTokenHandler } from "../middlewares/refreshTokenHandler";
+import { tokenHandler } from "../middlewares/tokenHandler";
 
 export const userRouter = Router();
 
 userRouter.post("/registration", registration as RequestHandler);
 userRouter.post("/login", login as RequestHandler);
-userRouter.post("/refreshToken", refreshTokenHandler as RequestHandler, refreshToken as RequestHandler);
+userRouter.post("/refreshToken", tokenHandler as RequestHandler, refreshToken as RequestHandler);

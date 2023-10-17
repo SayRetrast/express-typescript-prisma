@@ -4,7 +4,7 @@ import { AppError } from "../error/AppError";
 import { RequestWithUser } from "../utils/types";
 import { Decode } from "../utils/types";
 
-export const refreshTokenHandler = (
+export const tokenHandler = (
   req: RequestWithUser,
   res: Response,
   next: NextFunction
