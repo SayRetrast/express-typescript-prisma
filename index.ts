@@ -2,7 +2,7 @@ import express, { Express } from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import { requestLogger } from "./middlewares/requestLogger";
-import { router } from "./routers";
+import { router } from "./routers/router";
 import { errorLogger } from "./middlewares/errorLogger";
 import { errorResponder } from "./middlewares/errorResponder";
 import { invalidPathHandler } from "./middlewares/invalidPathHandler";
