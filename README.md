@@ -22,18 +22,27 @@ Download all dependencies:
 yarn install
 ```
 
+Create .env in root directory with server port and jwt secret key:
+
+```bash
+PORT=5000
+JWT_SECRET_KEY="SECRET_KEY"
+```
+
+# Database
+
 Invoke the Prisma CLI with:
 
 ```
 npx prisma
 ```
 
-Add .env in root directory and define server port, database url to connect to the database, jwt secret key, for example:
+Append the connection URL to .env:
 
 ```bash
 PORT=5000
-DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
 JWT_SECRET_KEY="SECRET_KEY"
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
 ```
 
 Format of the connection URL (DATABASE_URL):
