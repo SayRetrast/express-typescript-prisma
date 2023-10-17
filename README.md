@@ -4,7 +4,7 @@ A boilerplate express app that provides simple authentication service. Typescrip
 
 # Getting started
 
-Clone git repo or download this project:
+Git clone repo or download this project:
 
 ```bash
 git clone https://github.com/RetrasTT/express-typescript-prisma.git
