@@ -28,7 +28,7 @@ Invoke the Prisma CLI with:
 npx prisma
 ```
 
-Add .env in root directory and define server port, database url to connect to database, jwt secret key, for example:
+Add .env in root directory and define server port, database url to connect to the database, jwt secret key, for example:
 
 ```bash
 PORT=5000
@@ -69,7 +69,7 @@ Whenever you update your Prisma schema, you will have to update your database sc
 yarn prisma migrate dev
 ```
 
-Check Prisma [docs](https://www.prisma.io/docs) for more information about how to define models, make queries, connect to database and more.
+Check Prisma [docs](https://www.prisma.io/docs) for more information about how to define models, make queries, connect to the database and more.
 
 # Dev, Build, Start
 
@@ -90,6 +90,7 @@ To start server in production mode:
 ```bash
 yarn start
 ```
+
 # APIs
 
 ```bash
